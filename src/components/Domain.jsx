@@ -15,7 +15,7 @@ export default function Domain(props) {
 
 
 
-    if (props.team == 'dark') {
+    if (props.team === 'dark') {
         return (
             <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
 
