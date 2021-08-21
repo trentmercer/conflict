@@ -5,10 +5,19 @@ import { coordinates } from '../data/entities'
 
 export default function Board() {
 
-    const [positioning] = React.useState({
+    const [positioning, setPositioning] = React.useState({
         light: ['a2', 'b2', 'c2', 'd2'],
         dark: ['a3', 'b3', 'c3', 'd3']
     })
+
+
+    React.useEffect(() => {
+        setPositioning({
+        light: ['a2', 'b2', 'c2', 'd2'],
+        dark: ['a3', 'b3', 'c3', 'd3']
+        })
+
+    }, [setPositioning])
 
 
     return (
