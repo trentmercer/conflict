@@ -7,7 +7,7 @@ import Game from './screens/Game'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game />
+    <Game style={{backgroundColor: '#0A1D37'}}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
