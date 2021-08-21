@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 export default function Game() {
 
     return (
-        <Container style={{marginTop: 18}}>
+        <Container style={{marginTop: 18, backgroundColor: 'black', padding: 80}}>
             <Row>
                 <Col sm={3}>
                     <Domain />
