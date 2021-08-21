@@ -1,43 +1,39 @@
 import React from 'react';
 import Domain from './Domain'
+import Devoted from './Devoted'
 
-import { coordinates } from '../data/entities'
+
+function renderDomain(i, [devotedX, devotedY]) {
+    const x = i % 8
+    const y = Math.floor(i / 8)
+    const isDevotedHere = x === devotedX && y === devotedY
+
+    let dark
+    if (i < 8) {
+        dark = true;
+    }
+
+    const piece = isDevotedHere ? <Devoted /> : null
+
+    return (
+        <div key={i} style={{ width: '25%', position: 'relative' }}>
+            <Domain dark={dark}>{piece}</Domain>
+        </div>
+    )
+}
 
 export default function Board() {
+    let devotedPosition = [0, 1]
+    const spaces = []
 
-    const [positioning, setPositioning] = React.useState({
-        light: ['a2', 'b2', 'c2', 'd2'],
-        dark: ['a3', 'b3', 'c3', 'd3']
-    })
-
-
-    React.useEffect(() => {
-        setPositioning({
-        light: ['a2', 'b2', 'c2', 'd2'],
-        dark: ['a3', 'b3', 'c3', 'd3']
-        })
-
-    }, [setPositioning])
-
+    for (let i = 0; i < 16; i++) {
+        spaces.push(renderDomain(i, devotedPosition))
+    }
 
     return (
         <div className="board">
-            <div>
-                {coordinates.map((rows, index) => (
-                    <div key={index} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
-                        {rows.map((space, index) => {
-                            if (space[1] === '4' || space[1] === '3') {
-                                return (
-                                    <Domain key={index} coordinate={space} team={'dark'} positioning={positioning} />
-                                )
-                            } else {
-                                return (
-                                    <Domain key={index} coordinate={space} team={'light'} positioning={positioning} />
-                                )
-                            }
-                        })}
-                    </div>
-                ))}
+            <div style={{ width: '800px', height: '400px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+                {spaces}
             </div>
         </div>
     )

@@ -2,7 +2,9 @@ import React from 'react';
 
 export default function Devoted(props) {
 
-    if (props.team === 'dark') {
+    const color = props.dark ? 'dark' : 'light'
+
+    if (color === 'dark') {
         return (
             <div className="devoted-dark" />
         )
