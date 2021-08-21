@@ -14,11 +14,11 @@ export default function Domain() {
     return (
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
 
-            <Card style={{ width: '18rem' }} onClick={handleClick} style={{height: 160, marginTop: 20}}>
+            <Card onClick={handleClick} style={{height: 160, width: '18rem'}}>
                 <h1>FRONT</h1>
             </Card>
 
-            <Card style={{ width: '18rem' }} onClick={handleClick} style={{height: 160, marginTop: 20}}>
+            <Card onClick={handleClick} style={{height: 160, width: '18rem'}}>
                 <h1>BACK</h1>
             </Card>
         </ReactCardFlip>
