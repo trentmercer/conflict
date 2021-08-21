@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Game from './screens/Game'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Game from './screens/Game'
+import './main.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game style={{backgroundColor: '#0A1D37'}}/>
+    <Game />
   </React.StrictMode>,
   document.getElementById('root')
 );
