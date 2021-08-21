@@ -2,10 +2,10 @@ import React from 'react';
 import Domain from './Domain'
 import Devoted from './Devoted'
 
-
 function renderDomain(i, [devotedX, devotedY]) {
-    const x = i % 8
-    const y = Math.floor(i / 8)
+    const x = i % 4
+    const y = Math.floor(i / 4)
+
     const isDevotedHere = x === devotedX && y === devotedY
 
     let dark
@@ -23,7 +23,7 @@ function renderDomain(i, [devotedX, devotedY]) {
 }
 
 export default function Board() {
-    let devotedPosition = [0, 1]
+    let devotedPosition = [0, 0]
     const spaces = []
 
     for (let i = 0; i < 16; i++) {
