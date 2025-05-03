@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+**Conflict: Otilera Ixis** is a fast-paced two-player strategic board game where ancient deities wage war across shifting domains of magic. Using their loyal **Devoted** and the hidden power of **Shrines**, players maneuver, flip domains, and banish their opponents to achieve ultimate victory across the 4x4 planar battlefield.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Conflict: Otilera Ixis** rewards clever positioning, daring aggression, and thoughtful timing. Whether you dominate through power, outwit with movement, or overwhelm with shrines and points, victory belongs to the most cunning god!
 
-## Available Scripts
+Each player represents a **Deity**, beginning with a **Prime Domain** and four **Devoted** on the battlefield. On your turn:
 
-In the project directory, you can run:
+1. **Score Points**: Convert active Fate Points into permanent Victory Points.
+2. **Collect Fate Points**: One for each Shrine you control.
+3. **Take Actions**: Spend points to Traverse, Banish, Purchase Shrines, Activate abilities, Move, or Revive Devoted.
+4. **End Turn**: Bank any unused Fate Points.
 
-### `yarn start`
+Players alternate turns, using cunning moves to control the battlefield and outwit their opponent.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Devoted**: Main units on the board. They move, traverse, and banish enemies.
+- **Prime Domain**: Your starting Domain; must be defended at all costs.
+- **Shrines**: Special power sources you can purchase for Fate or Victory Points.
+- **Inner Plane**: The “dead zone” where banished Devoted are trapped until revived.
+- **Face Down / Face Up Domains**: Flipping Domains controls their power and the board's landscape.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Domains and Their Powers
 
-### `yarn test`
+Each Domain card has a unique magical Aspect:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+|Domain|Aspect|Ability|
+|---|---|---|
+|**The Sun**|Death|Purify: Score any active Fate Point immediately.|
+|**The Heart**|Life|Bless: Add an active Fate Point to any Devoted or Shrine.|
+|**The Infinite**|Change|Warp: Teleport a Devoted with an active point anywhere.|
+|**The Hourglass**|Permanence|Lock: Lock a Domain, preventing activation.|
+|**The Sword**|Freedom|Rally: Move or Banish with an ally without needing a point.|
+|**The Crown**|Service|Contract: Move any enemy Devoted.|
+|**The Eye**|Knowledge|Scheme: Flip an occupied domain.|
+|**The Candle**|Faith|Miracle: Flip an unoccupied domain.|
 
-### `yarn build`
+**Strategy Tip**: Knowing when and where to activate a domain’s ability can change the tide of the game.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+How to Play:
+|Phase|Action|
+|---|---|
+|**Start Turn**|Score → Collect Fate Points|
+|**During Turn**|Spend points: Move, Traverse, Banish, Revive, Purchase Shrine, Trigger Abilities|
+|**End Turn**|Bank unused Fate Points as Victory Points|
+|**Win Check**|Check all 4 win conditions|
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Turn Actions:
+|Action|Cost|Description|
+|---|---|---|
+|**Traverse**|1 FP|Move a Devoted to an adjacent empty Domain, flipping it face-up and activating its power.|
+|**Banish**|1 FP|Remove an adjacent enemy Devoted and claim their space.|
+|**Purchase Shrine**|VP + 1/owned Shrines|Gain access to new magical abilities.|
+|**Trigger Shrine Ability**|1 FP or VP|Activate the power of an owned Shrine.|
+|**Move Dead Devoted**|1 FP or VP|Move a dead Devoted on the inner plane to a new empty space.|
+|**Revive Devoted**|1 FP or VP|Bring a dead Devoted back onto the battlefield.|
